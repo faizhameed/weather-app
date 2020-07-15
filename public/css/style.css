@@ -1,0 +1,40 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1d1d1d;
+  color: #ddd;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.portrait {
+  width: 250px;
+}
+header a {
+  text-decoration: none;
+  color: rgb(133, 133, 133);
+}
+header a:hover {
+  color: rgb(238, 238, 238);
+}
+footer {
+  color: rgb(190, 190, 190);
+  padding: 16px 0;
+  border-top: 1px solid #eeeeee;
+  margin-top: 16px;
+}
+
+header {
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+.main-content {
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
