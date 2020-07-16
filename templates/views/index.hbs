@@ -13,8 +13,19 @@
     <div class='main-content'>
         {{>header}}
         <p>We will display weather forecast here</p>
+        <form action="0" id='form'>
+            <input id='address' type="text" placeholder="Location" />
+            <button>
+                Search
+            </button>
+        </form>
+        <p id='errorMessage'></p>
+        <p id="message"></p>
+
+
     </div>
     {{>footer}}
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

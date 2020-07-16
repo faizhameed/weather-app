@@ -56,7 +56,7 @@ app.get("/weather", (req, res) => {
         return res.send({
           error: "Wrong with geocode",
         });
-      forecast(latitude, longitude, (error, forecastData) => {
+      forecast(latitude, longitude, (error, forecastData = "empty") => {
         if (error)
           return res.send({
             error: "Wrong with forecast",
