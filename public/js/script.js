@@ -20,7 +20,9 @@ form.addEventListener("submit", (e) => {
       let text = `The location is ${location}. The conditions is ${forecastData.weather_descriptions.join(
         ","
       )}. 
-      The outside temperature is ${forecastData.temperature}`;
+      The outside temperature is ${forecastData.temperature}. It feels like ${
+        forecastData.feelslike
+      }`;
       msg.innerHTML = text;
     })
     .catch((error) => console.log(error));
